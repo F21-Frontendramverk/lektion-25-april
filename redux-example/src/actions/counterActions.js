@@ -5,4 +5,11 @@ const increment = (data) => {
     }
 }
 
-export { increment}
+const decrement = (data) => {
+    return {
+        type: 'DECREMENT',
+        payload: data
+    }
+}
+
+export { increment, decrement }
